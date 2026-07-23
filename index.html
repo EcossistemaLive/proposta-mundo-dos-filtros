@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!--
+============================================================================
+ PROPOSTA — MUNDO DOS FILTROS · VIDI · "Ver antes de vencer"
+ Gerada pelo framework M.A.P.C.A a partir de proposta-vidi-modelo.html.
+ Base: 1ª reunião de diagnóstico em 20/07/2026 (Luiz Portal).
+ Campos [a confirmar] devem ser preenchidos antes da assinatura do contrato.
+============================================================================
+-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proposta de Consultoria — Mundo dos Filtros | VIDI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --vidi-gold:#C9A84C;--vidi-black:#0A0A0A;--vidi-charcoal:#3D3D3D;
+  --vidi-offwhite:#F5F0E8;--vidi-lightgray:#EBEBEB;
+  --vidi-surface:#141414;--vidi-surface-2:#1c1c1c;--vidi-border:#2a2a2a;
+  --vidi-gold-soft:rgba(201,168,76,.14);--vidi-gold-line:rgba(201,168,76,.45);
+  --vidi-text:#F5F0E8;--vidi-text-muted:#b8b2a6;
+  --font-serif:'Playfair Display',Georgia,serif;
+  --font-sans:'Roboto','Helvetica Neue',Arial,sans-serif;
+  --font-legal:'Times New Roman',Georgia,serif;
+  --radius:4px;--radius-lg:6px;--maxw:960px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--vidi-black);color:var(--vidi-text);font-family:var(--font-sans);line-height:1.7;-webkit-font-smoothing:antialiased}
+::selection{background:var(--vidi-gold);color:var(--vidi-black)}
+h1,h2,h3,h4{font-family:var(--font-serif);color:var(--vidi-offwhite);line-height:1.2}
+h1{font-size:clamp(2.4rem,6vw,4rem);font-weight:700;letter-spacing:.5px}
+h2{font-size:clamp(1.7rem,3.5vw,2.4rem);font-weight:700}
+h3{font-size:1.35rem;font-weight:600}
+p{color:var(--vidi-text-muted);margin-bottom:1rem}
+strong{color:var(--vidi-offwhite);font-weight:500}
+a{color:var(--vidi-gold);text-decoration:none}
+.eyebrow{font-size:.78rem;font-weight:500;letter-spacing:.28em;text-transform:uppercase;color:var(--vidi-gold)}
+.gold-rule{width:64px;height:2px;background:var(--vidi-gold);border:0;margin:1.2rem 0}
+.section{max-width:var(--maxw);margin:0 auto;padding:64px 24px}
+.tag{display:inline-block;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--vidi-gold-soft);color:var(--vidi-gold)}
+.vidi-header{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:20px 40px;border-bottom:1px solid var(--vidi-border);background:rgba(10,10,10,.92);backdrop-filter:blur(6px)}
+.vidi-logo{display:flex;align-items:center;gap:14px}
+.vidi-logo img{width:38px;height:38px;object-fit:contain}
+.vidi-logo .wordmark{font-family:var(--font-serif);font-weight:700;font-size:1.4rem;letter-spacing:.18em;color:var(--vidi-offwhite)}
+.tabs{display:flex;gap:6px}
+.tab-btn{font-family:var(--font-sans);font-size:.8rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--vidi-text-muted);background:none;border:1px solid transparent;padding:10px 18px;border-radius:var(--radius);cursor:pointer;transition:all .2s}
+.tab-btn:hover{color:var(--vidi-gold)}
+.tab-btn.active{color:var(--vidi-black);background:var(--vidi-gold);border-color:var(--vidi-gold)}
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--vidi-border)}
+.hero .wrap{max-width:var(--maxw);margin:0 auto;padding:96px 24px 88px;position:relative;z-index:2}
+.hero .emperor{position:absolute;inset:0;width:100%;height:100%;opacity:1;z-index:1;object-fit:cover;object-position:center right}
+.hero h1{max-width:16ch}
+.hero .tagline{font-family:var(--font-serif);font-style:italic;color:var(--vidi-gold);font-size:1.15rem;margin-top:8px}
+.meta{display:flex;gap:40px;flex-wrap:wrap;margin-top:40px;font-size:.9rem}
+.meta div span{display:block;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--vidi-gold);margin-bottom:4px}
+.vidi-quote{border-left:3px solid var(--vidi-gold);padding:8px 0 8px 28px;margin:24px 0}
+.vidi-quote p{font-family:var(--font-serif);font-style:italic;font-size:1.5rem;line-height:1.5;color:var(--vidi-offwhite)}
+.vidi-quote cite{display:block;margin-top:12px;font-style:normal;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--vidi-gold)}
+.grid{display:grid;gap:20px}
+@media(min-width:720px){.grid-2{grid-template-columns:1fr 1fr}.grid-4{grid-template-columns:repeat(2,1fr)}}
+.card{background:var(--vidi-surface);border:1px solid var(--vidi-border);border-radius:var(--radius-lg);padding:26px}
+.card--gold{border-top:3px solid var(--vidi-gold)}
+.card h3{margin-bottom:.4rem}
+.matrix{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:24px}
+.quad{background:var(--vidi-surface);border:1px solid var(--vidi-border);border-radius:var(--radius);padding:20px;min-height:130px}
+.quad h4{color:var(--vidi-gold);margin-bottom:8px;font-family:var(--font-sans);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase}
+.quad.pri{border-color:var(--vidi-gold-line);background:linear-gradient(180deg,var(--vidi-gold-soft),var(--vidi-surface))}
+.quad ul{list-style:none;font-size:.92rem;color:var(--vidi-text-muted)}
+.quad li{padding:3px 0}
+.step{display:flex;gap:20px;padding:20px 0;border-bottom:1px solid var(--vidi-border)}
+.step .num{font-family:var(--font-serif);font-size:2rem;color:var(--vidi-gold);min-width:56px}
+.step .body h3{margin-bottom:2px}
+.step .dur{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--vidi-gold)}
+.invest{background:var(--vidi-surface);border:1px solid var(--vidi-gold-line);border-radius:var(--radius-lg);padding:40px;text-align:center;margin-top:24px}
+.invest .value{font-family:var(--font-serif);font-size:clamp(2.4rem,6vw,3.6rem);font-weight:700;color:var(--vidi-gold)}
+.invest .extenso{font-style:italic;color:var(--vidi-text-muted)}
+.invest table{width:100%;max-width:520px;margin:24px auto 8px;border-collapse:collapse;text-align:left;font-size:.95rem}
+.invest td{padding:10px 8px;border-bottom:1px solid var(--vidi-border);color:var(--vidi-text-muted)}
+.invest td.v{text-align:right;color:var(--vidi-offwhite);font-weight:500;white-space:nowrap}
+.btn{display:inline-block;font-family:var(--font-sans);font-weight:500;font-size:.9rem;letter-spacing:.06em;padding:15px 34px;border-radius:var(--radius);cursor:pointer;transition:all .25s;border:1.5px solid transparent}
+.btn-primary{background:var(--vidi-gold);color:var(--vidi-black);border-color:var(--vidi-gold)}
+.btn-primary:hover{background:#d8b962;transform:translateY(-1px)}
+.btn-outline{background:transparent;color:var(--vidi-gold);border-color:var(--vidi-gold-line)}
+.btn-outline:hover{background:var(--vidi-gold-soft)}
+#tab-contrato{display:none}
+.contract{background:var(--vidi-offwhite);color:#111;font-family:var(--font-legal);max-width:820px;margin:40px auto;padding:56px;border-radius:var(--radius)}
+.contract h2,.contract h3{color:#0A0A0A;font-family:var(--font-legal)}
+.contract .c-head{text-align:center;border-bottom:2px solid #0A0A0A;padding-bottom:18px;margin-bottom:28px}
+.contract .c-head h2{text-transform:uppercase;letter-spacing:1px;font-size:1.5rem}
+.contract .party{border:1px solid #999;background:#fff;padding:16px;margin-bottom:14px}
+.contract .party b{color:#7a5f1e}
+.contract .clause{margin:22px 0}
+.contract .clause-title{font-weight:bold;text-transform:uppercase;color:#7a5f1e;border-bottom:1px solid #0A0A0A;padding-bottom:5px;margin-bottom:10px;letter-spacing:.5px}
+.contract .clause p,.contract .clause li{color:#222;text-align:justify;font-size:.98rem}
+.contract .clause ul{margin-left:22px}
+.contract .currency{font-weight:bold;background:#efe6cf;padding:2px 6px;border-radius:3px;color:#7a5f1e}
+.contract .signs{display:flex;justify-content:space-between;margin-top:64px;gap:24px}
+.contract .sign{width:45%;text-align:center;border-top:2px solid #0A0A0A;padding-top:10px;font-size:.9rem}
+.print-btn{position:fixed;bottom:28px;right:28px;z-index:60;background:var(--vidi-gold);color:var(--vidi-black);border:none;padding:14px 26px;border-radius:var(--radius);font-weight:700;cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,.5)}
+.dev-credit{font-size:.72rem;opacity:.4;font-style:italic;text-align:center;padding:40px 0;color:var(--vidi-text-muted)}
+footer{border-top:1px solid var(--vidi-border);text-align:center;padding:40px 20px}
+footer .wordmark{font-family:var(--font-serif);letter-spacing:.2em;color:var(--vidi-offwhite);font-size:1.2rem}
+@media print{
+  body{background:#fff}
+  .vidi-header,.print-btn,#tab-proposta,footer,.dev-credit{display:none!important}
+  #tab-contrato{display:block!important}
+  .contract{box-shadow:none;margin:0;padding:12mm;max-width:100%}
+  @page{size:A4;margin:16mm}
+}
+</style>
+</head>
+<body>
+
+<header class="vidi-header">
+  <div class="vidi-logo">
+    <img src="assets/vidi_logo.png" alt="VIDI">
+    <span class="wordmark">VIDI</span>
+  </div>
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="proposta" onclick="showTab('proposta',this)">Proposta</button>
+    <button class="tab-btn" data-tab="contrato" onclick="showTab('contrato',this)">Contrato</button>
+  </div>
+</header>
+
+<!-- ===================== ABA PROPOSTA ===================== -->
+<main id="tab-proposta">
+
+  <section class="hero">
+    <img class="emperor" src="assets/vidi_emperor_profile.png" alt="">
+    <div class="wrap">
+      <span class="eyebrow">Proposta de Consultoria</span>
+      <h1>Ver antes de vencer.</h1>
+      <p class="tagline">Um diagnóstico preciso para a Mundo dos Filtros.</p>
+      <div class="meta">
+        <div><span>Cliente</span>Mundo dos Filtros</div>
+        <div><span>Consultor</span>Renato Calyle e Luiz Portal</div>
+        <div><span>Data</span>23 de julho de 2026</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- M — Mapeamento e Análise (Diagnóstico) -->
+  <section class="section">
+    <span class="eyebrow">M · Mapeamento e Análise</span>
+    <h2>O diagnóstico</h2>
+    <hr class="gold-rule">
+    <div class="vidi-quote">
+      <p>"O que a sua operação realmente parece para quem a vê de fora — o cliente, o lojista, o fornecedor — e não para quem já vive dentro dela todos os dias?"</p>
+      <cite>Ponto de partida do diagnóstico</cite>
+    </div>
+    <p>A Mundo dos Filtros é uma operação grande e complexa, organizada em quatro frentes — <strong>expedição, torres, saque e financeiro</strong> — que atravessa um momento de reestruturação de liderança. Desligamentos de figuras-chave deixaram um <strong>clima interno apreensivo</strong>, e a equipe técnica, reduzida de cerca de 40 para pouco mais de 20 pessoas, opera <strong>sobrecarregada</strong>. Depois de aproximadamente um ano tentando resolver tudo ao mesmo tempo, a leitura é clara: falta clareza antes da ação, e a energia deve ir para <strong>o que resolve — sem ego e sem vaidade</strong>.</p>
+    <p>A resposta é um <strong>diagnóstico faseado, enxuto e orientado a resultado</strong>, em ritmo de sprint. Começamos olhando de fora para dentro — como a marca é percebida por clientes, lojistas, vendedores da ponta e fornecedores — através de uma <strong>pesquisa isenta</strong>, conduzida por quem não tem interesse interno no resultado. Em seguida, entramos na operação com um <strong>levantamento interno apresentado como a primeira etapa de um programa de formação de líderes</strong>: esse enquadramento evita boicote e vícios de resposta e, na mesma rodada, colhe pesquisa de clima, gargalos e a base para a formação. Por fim, sentamos com a gestão para <strong>confrontar o que já é feito com o que foi encontrado</strong> — confirmando, ajustando ou substituindo — e desenhamos a operação usando as ferramentas que a empresa já possui, priorizando <strong>formar líderes internos</strong> para fortalecer a cultura.</p>
+
+    <h3 style="margin-top:40px">Priorização — impacto × esforço</h3>
+    <div class="matrix">
+      <div class="quad pri"><h4>Quick Wins · prioridade máxima</h4><ul>
+        <li>— Pesquisa externa de percepção de marca</li>
+        <li>— Levantamento interno (via programa de líderes)</li>
+        <li>— Pesquisa de clima estratificada</li></ul></div>
+      <div class="quad"><h4>Projetos Estruturais · médio prazo</h4><ul>
+        <li>— Formação de líderes internos</li>
+        <li>— Redesenho do Customer Experience</li>
+        <li>— Redesenho da operação (4 departamentos)</li></ul></div>
+      <div class="quad"><h4>Melhorias Incrementais</h4><ul>
+        <li>— Capacitação técnica contínua</li>
+        <li>— Pesquisa de clima recorrente</li></ul></div>
+      <div class="quad"><h4>Distrações · evitar</h4><ul>
+        <li>— Trazer liderança de fora para "tocar" a cultura</li>
+        <li>— Resolver tudo simultaneamente</li>
+        <li>— Introduzir ferramentas novas sem necessidade</li></ul></div>
+    </div>
+  </section>
+
+  <!-- A — Arquitetura do Plano -->
+  <section class="section" style="padding-top:0">
+    <span class="eyebrow">A · Arquitetura do Plano</span>
+    <h2>Plano de ação</h2>
+    <hr class="gold-rule">
+    <div class="step"><div class="num">01</div><div class="body">
+      <h3>Pesquisa externa de percepção da marca</h3><span class="dur">Etapa 1 · ~2 a 3 semanas</span>
+      <p>Escuta isenta de clientes que receberam os filtros, lojistas, vendedores da ponta e fornecedores — considerando pessoas, processo e tecnologia. Conduzida por especialista externa (Ju/Sicob), com metodologia e depuração próprias. Entregável: o "primeiro mapa" — visão de fora para dentro.</p></div></div>
+    <div class="step"><div class="num">02</div><div class="body">
+      <h3>Levantamento interno &amp; pesquisa de clima</h3><span class="dur">Etapa 2 · ~3 meios-períodos, por departamento</span>
+      <p>Entrevistas em loco apresentadas como a primeira etapa do programa de formação de líderes. Perguntas estratificadas (estilo perfil comportamental) que impedem "hackear" a resposta e revelam gargalos, eficiência, comunicação e sobrecarga — colhendo, de uma vez, clima, diagnóstico e base para a formação.</p></div></div>
+    <div class="step"><div class="num">03</div><div class="body">
+      <h3>Mapeamento As-Is × To-Be</h3><span class="dur">Etapa 3</span>
+      <p>Sessão com a gestão para mapear o que já é feito e confrontar com os achados: confirmar, ajustar ou substituir. Uso das ferramentas de gestão que a empresa já possui, dando clareza de com quem contar e onde faltam braços.</p></div></div>
+    <div class="step"><div class="num">04</div><div class="body">
+      <h3>Desenho da operação e do Customer Experience</h3><span class="dur">Etapa 4 · desenho em ~1 semana</span>
+      <p>Redesenho enxuto dos processos críticos e da frente de Customer Experience, sobre as ferramentas que a empresa já usa. Fortalece a operação a partir de quem já está na casa.</p></div></div>
+    <div class="step"><div class="num">05</div><div class="body">
+      <h3>Programa de formação de líderes internos</h3><span class="dur">Etapa 5 · pós-diagnóstico</span>
+      <p>Base comum para todos e módulos por tema em grupos menores, definidos a partir dos dados do diagnóstico. Forma líderes a partir dos técnicos da casa — de forma precisa e eficiente — fortalecendo a cultura.</p></div></div>
+  </section>
+
+  <!-- P — Precificação e Escopo -->
+  <section class="section" style="padding-top:0">
+    <span class="eyebrow">P · Precificação e Escopo</span>
+    <h2>Escopo detalhado</h2>
+    <hr class="gold-rule">
+    <div class="grid grid-2">
+      <div class="card card--gold"><h3>Pesquisa externa isenta</h3><p>Escuta estruturada de clientes, lojistas, vendedores e fornecedores, com metodologia e depuração conduzidas por especialista sem interesse interno. Relatório do "primeiro mapa".</p></div>
+      <div class="card card--gold"><h3>Levantamento interno &amp; clima</h3><p>Entrevistas por departamento sob o mote da formação de líderes, com pesquisa de clima estratificada e leitura de gargalos, eficiência e comunicação.</p></div>
+      <div class="card card--gold"><h3>Mapeamento As-Is × To-Be</h3><p>Confronto entre o que é feito hoje e os achados, sobre as ferramentas que a empresa já usa — confirmar, ajustar, substituir.</p></div>
+      <div class="card card--gold"><h3>Desenho da operação &amp; CX</h3><p>Redesenho enxuto dos processos críticos e da frente de Customer Experience, sobre as ferramentas já em uso.</p></div>
+      <div class="card card--gold"><h3>Formação de líderes internos</h3><p>Trilha de desenvolvimento a partir dos técnicos da casa, com base comum e módulos por tema definidos pelos achados do diagnóstico — fortalecendo a cultura.</p></div>
+    </div>
+
+    <div class="invest">
+      <span class="eyebrow">Investimento — programa completo</span>
+      <div class="value">R$ 42.000</div>
+      <p class="extenso">Quarenta e dois mil reais</p>
+      <p style="margin-top:14px;font-size:.85rem">Contempla o programa completo — pesquisa externa, levantamento interno, mapeamento, desenho da operação e formação de líderes. Os temas e ferramentas da formação são definidos a partir dos achados do diagnóstico.</p>
+    </div>
+
+    <div style="text-align:center;margin-top:40px">
+      <a class="btn btn-primary" onclick="showTab('contrato',document.querySelectorAll('.tab-btn')[1])">Ver contrato e avançar</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wordmark">VIDI</div>
+    <p style="margin-top:8px;font-style:italic;color:var(--vidi-gold)">Ver antes de vencer</p>
+  </footer>
+  <p class="dev-credit">Desenvolvido por Cléber Donato · VIDI Consultoria</p>
+</main>
+
+<!-- ===================== ABA CONTRATO ===================== -->
+<section id="tab-contrato">
+  <div class="contract">
+    <div class="c-head">
+      <h2>Contrato de Prestação de Serviços de Consultoria</h2>
+      <div>VIDI · Catalyst Educação Ltda — CNPJ 64.465.973/0001-89</div>
+    </div>
+
+    <div class="party"><b>CONTRATANTE:</b> Mundo dos Filtros — CNPJ [a confirmar] — [endereço a confirmar]. Representante legal: [a confirmar], CPF [a confirmar].</div>
+    <div class="party"><b>CONTRATADA:</b> VIDI (Catalyst Educação Ltda), CNPJ 64.465.973/0001-89, Goiânia-GO. Consultor responsável: Renato Calyle e Luiz Portal — [e-mail a confirmar].</div>
+
+    <div class="clause"><div class="clause-title">Cláusula Primeira — Do Objeto</div>
+      <p>A CONTRATADA prestará à CONTRATANTE serviços de consultoria empresarial na modalidade de diagnóstico faseado, conforme escopo detalhado na proposta: (i) pesquisa externa de percepção da marca; (ii) levantamento interno e pesquisa de clima; (iii) mapeamento as-is × to-be; (iv) desenho da operação e do Customer Experience; e (v) programa de formação de líderes internos. Os serviços serão executados segundo as melhores práticas, com foco em eficiência operacional e fortalecimento da cultura.</p></div>
+
+    <div class="clause"><div class="clause-title">Cláusula Segunda — Do Prazo</div>
+      <p>Vigência estimada para o programa (diagnóstico, desenho e formação de líderes), iniciando em [data a confirmar] e conforme cronograma da proposta, prorrogável por termo aditivo. <b>Parágrafo único:</b> os prazos são estimativos e podem ser ajustados conforme a complexidade e a disponibilidade da CONTRATANTE em fornecer informações e acesso.</p></div>
+
+    <div class="clause"><div class="clause-title">Cláusula Terceira — Do Valor</div>
+      <p>O valor total do programa é de <span class="currency">R$ 42.000 (quarenta e dois mil reais)</span>, contemplando todas as etapas descritas na proposta (pesquisa externa, levantamento interno, mapeamento, desenho da operação e formação de líderes).</p></div>
+
+    <div class="clause"><div class="clause-title">Cláusula Quarta — Das Obrigações da Contratada</div>
+      <ul>
+        <li>a) Executar os serviços com qualidade técnica reconhecida;</li>
+        <li>b) Manter sigilo sobre informações confidenciais;</li>
+        <li>c) Entregar conforme cronograma;</li>
+        <li>d) Prestar suporte durante a execução do diagnóstico;</li>
+        <li>e) Fornecer relatórios de acompanhamento quando solicitado.</li>
+      </ul></div>
+
+    <div class="clause"><div class="clause-title">Cláusula Quinta — Das Obrigações da Contratante</div>
+      <ul>
+        <li>a) Efetuar os pagamentos nas datas acordadas;</li>
+        <li>b) Fornecer informações e documentos necessários;</li>
+        <li>c) Disponibilizar acesso a sistemas e colaboradores;</li>
+        <li>d) Designar responsável interno pelo acompanhamento;</li>
+        <li>e) Colaborar na implementação das recomendações.</li>
+      </ul></div>
+
+    <div class="clause"><div class="clause-title">Cláusula Sexta — Da Confidencialidade</div>
+      <p>As partes mantêm sigilo sobre todas as informações trocadas. <b>§1º</b> O descumprimento implica multa de 50% do valor do contrato, sem prejuízo das sanções legais. <b>§2º</b> A obrigação permanece por 5 (cinco) anos após o término.</p></div>
+
+    <div class="signs">
+      <div class="sign"><b>[a confirmar]</b><br>Representante Legal<br>Mundo dos Filtros<br>CPF: [a confirmar]</div>
+      <div class="sign"><b>Renato Calyle e Luiz Portal</b><br>VIDI Consultoria<br>Consultores Responsáveis</div>
+    </div>
+  </div>
+</section>
+
+<button id="print-btn" class="print-btn" onclick="printContract()" style="display:none">Salvar Contrato como PDF</button>
+
+<script>
+function showTab(name,btn){
+  document.getElementById('tab-proposta').style.display = name==='proposta'?'block':'none';
+  document.getElementById('tab-contrato').style.display = name==='contrato'?'block':'none';
+  var pb=document.getElementById('print-btn');
+  if(pb) pb.style.display = name==='contrato'?'block':'none';
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  if(btn) btn.classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function printContract(){
+  showTab('contrato',document.querySelectorAll('.tab-btn')[1]);
+  setTimeout(()=>window.print(),200);
+}
+</script>
+</body>
+</html>
